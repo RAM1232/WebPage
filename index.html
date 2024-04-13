@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Management</title>
+    <link href="./crud.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="images.jpg" type="image/x-icon">
+</head>
+<body>
+    <h1>Contact Management</h1>
+    <hr/>
+    <form id="contactForm">
+        <input type="hidden" id="editedContactIndex">
+        <input type="text" id="name" placeholder="Name *" pattern="[A-Za-z]+(?: [A-Za-z]+)*" size="21" required>
+        <input type="text" id="company" placeholder="Company *" size=21 required>
+        <input type="text" id="designation" placeholder="Company Designation *" size=21 required>
+        <input type="text" id="phone" placeholder="Phone Number *" pattern="[0-9]+" size="21" required>
+        <input type="email" id="email" placeholder="Email *" size=21 required>
+        <button type="submit" id="submitContactBtn" size="20">Add Contact</button>
+    </form>
+    <table id="contactTable">
+        <thead>
+            <tr>
+                <th >Serial No.</th>
+                <th>Name</th>
+                <th>Company</th>
+                <th>Designation</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <!-- Make sure the file name matches your JavaScript file -->
+    <script src="crud.js"></script>
+</body>
+</html>
